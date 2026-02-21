@@ -5,7 +5,7 @@ import face_recognition
 import os
 
 
-def findEncodings(imgages):
+def findEncodings(images):
     encodeList = []
     for image in images:
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -15,7 +15,7 @@ def findEncodings(imgages):
 
 
 
-path = "pictures"
+path = "db_pictures"
 images = []
 classNames = []
 myList = os.listdir(path)
